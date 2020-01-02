@@ -19,5 +19,14 @@ public class ClientController {
 		obj.put("data", "abcdefg");
 		return obj;
 	}
+	
+	@GetMapping(value = "/test")
+	public Map<String, Object> test() {
+		Map<String, Object> obj = new HashMap<String, Object>();
+		obj.put("code", "100200");
+		obj.put("msg", "success");
+		obj.put("data", "test");
+		return obj;
+	}
 
 }
