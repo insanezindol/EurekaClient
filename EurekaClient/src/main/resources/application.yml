@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: EUREKACLIENT
+    name: eureka-client
   main:
     allow-bean-definition-overriding: true
  
@@ -12,8 +12,6 @@ eureka:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
     enabled: true
-  instance:
-    prefer-ip-address: true
 
 logging:
   level:
@@ -22,3 +20,9 @@ logging:
         config:
           sources:
             URLConfigurationSource: ERROR
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

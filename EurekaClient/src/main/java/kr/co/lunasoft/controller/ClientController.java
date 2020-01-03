@@ -16,7 +16,7 @@ public class ClientController {
 		Map<String, Object> obj = new HashMap<String, Object>();
 		obj.put("code", "100200");
 		obj.put("msg", "success");
-		obj.put("data", "abcdefg");
+		obj.put("data", "this is eureka client. 12345");
 		return obj;
 	}
 	
@@ -25,7 +25,7 @@ public class ClientController {
 		Map<String, Object> obj = new HashMap<String, Object>();
 		obj.put("code", "100200");
 		obj.put("msg", "success");
-		obj.put("data", "test");
+		obj.put("data", "this is eureka client. 67890");
 		return obj;
 	}
 
